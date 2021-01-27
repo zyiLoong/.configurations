@@ -1,0 +1,15 @@
+{
+  "mvn versions:set -DnewVersion=": {
+    "desc": "[mvn] version set",
+    "alias": ""
+  },
+  "mvn versions:commit": {
+    "desc": "[mvn] version commit",
+    "alias": ""
+  },
+  "git branch |grep -v '*'|xargs git branch -d": {
+    "desc": "[git] delete local branchs",
+    "alias": ""
+  }
+}
+
