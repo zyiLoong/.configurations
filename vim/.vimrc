@@ -38,30 +38,25 @@ set background=dark
 
 " The following are commented out as they cause vim to behave a lot
 " differently from regular Vi. They are highly recommended though.
-set showcmd		" Show (partial) command in status line.
-set showmatch		" Show matching brackets.
+set showcmd		" 是否在底部的命令输入行显示当前命令的信息，比如在 visual 模式下显示选择的区域大小等。Show (partial) command in status line.
+set showmatch		" 高亮显示对应的括号 Show matching brackets.
 set ignorecase		" Do case insensitive matching
 "set smartcase		" Do smart case matching
-set incsearch		" Incremental search
+set incsearch		" 随着输入递进式搜索 Incremental search
 "set autowrite		" Automatically save before commands like :next and :make
 "set hidden		" Hide buffers when they are abandoned
 
 " my config
-" 显示行号
-set number
-" 底部显示，当前是命令模式还是插入模式
-set showmode
-" 256色
-set t_Co=256
-" 根据文件类型，自动载入对应的缩进规则
-filetype indent on
-" 按下回车后，下一行缩进与上一行保持一致
-set autoindent
-" 高亮搜索内容
-set hlsearch
-" 命令模式下输入命令时，按tab显示所有可自动补的命令
-set wildmenu
-
+set number " 显示行号
+set showmode  " 底部显示，当前是命令模式还是插入模式
+set t_Co=256  " 256色
+filetype indent on  " 根据文件类型，自动载入对应的缩进规则
+set autoindent  " 按下回车后，下一行缩进与上一行保持一致
+set hlsearch  " 高亮搜索内容
+set wildmenu  " 命令模式下输入命令时，按tab显示所有可自动补的命令
+set autoread  " 有外部修改时，自动重读
+set ruler " 在底部状态栏显示光标当前所在的“行,列”
+set scrolloff=3 " 向上下滚动时，光标到窗口上、下各 n 行时认为触顶、底，开始滚动内容
 
 " vim-plugin
 "    call plug#begin()
