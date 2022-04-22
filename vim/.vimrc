@@ -48,6 +48,7 @@ set incsearch		" 随着输入递进式搜索 Incremental search
 
 " my config
 set number " 显示行号
+set rnu " 显示相对行号
 set showmode  " 底部显示，当前是命令模式还是插入模式
 set t_Co=256  " 256色
 filetype indent on  " 根据文件类型，自动载入对应的缩进规则
@@ -59,11 +60,12 @@ set ruler " 在底部状态栏显示光标当前所在的“行,列”
 set scrolloff=3 " 向上下滚动时，光标到窗口上、下各 n 行时认为触顶、底，开始滚动内容
 
 " vim-plugin
-"    call plug#begin()
-"    " Plug 'preservim/NERDTree'
-"    Plug 'davidhalter/jedi-vim'
-"    Plug 'tmux-plugins/vim-tmux'
-"    call plug#end()
+call plug#begin()
+" Plug 'preservim/NERDTree'
+" Plug 'davidhalter/jedi-vim'
+" Plug 'tmux-plugins/vim-tmux'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
 
 " NERDTree
 " autocmd VimEnter * NERDTreeToggle | wincmd p

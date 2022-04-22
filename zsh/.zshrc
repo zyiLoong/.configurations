@@ -16,3 +16,6 @@ alias kun='keep run'
 # set default editor to vim
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+# LANG
+export LANG=zh_CN.UTF-8
