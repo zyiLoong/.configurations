@@ -62,14 +62,13 @@ set scrolloff=3 		" 向上下滚动时，光标到窗口上、下各 n 行时认
 set tabstop=4 			" Tab 长度是4个空格
 set shiftwidth=4  		" 按下回车时，下一行如果自动缩进，缩进长度为4, read https://superuser.com/questions/594583/what-does-shiftwidth-do-in-vim-editor
 
-
-
 " vim-plugin
-"    call plug#begin()
-"    " Plug 'preservim/NERDTree'
-"    Plug 'davidhalter/jedi-vim'
-"    Plug 'tmux-plugins/vim-tmux'
-"    call plug#end()
+call plug#begin()
+" Plug 'preservim/NERDTree'
+" Plug 'davidhalter/jedi-vim'
+" Plug 'tmux-plugins/vim-tmux'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
 
 " NERDTree
 " autocmd VimEnter * NERDTreeToggle | wincmd p
